@@ -1,10 +1,10 @@
 
-public class SwiggyPriceCalculatorVisitorImpl implements PriceCalculatorVisitor {
+public class ZomatoPriceCalculatorVisitorImpl implements PriceCalculatorVisitor {
 
 	@Override
 	public int visit(Biryani biryani) {
 		if (biryani.getCost() > 400)
-			return biryani.getCost() - 40;
+			return biryani.getCost() - 10;
 		else
 			return biryani.getCost();
 	}

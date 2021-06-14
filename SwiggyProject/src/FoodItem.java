@@ -1,6 +1,7 @@
 
 public interface FoodItem {
 
-	int accept(SwiggyPriceCalculatorVisitor swiggyPriceCalculatorVisitor);
+	int accept(PriceCalculatorVisitor priceCalculatorVisitor);
+	
 	
 }

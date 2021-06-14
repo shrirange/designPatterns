@@ -18,8 +18,10 @@ public class Pizza implements FoodItem  {
 	}
 
 	@Override
-	public int accept(SwiggyPriceCalculatorVisitor swiggyPriceCalculatorVisitor) {
-		return swiggyPriceCalculatorVisitor.visit(this);
+	public int accept(PriceCalculatorVisitor priceCalculatorVisitor) {
+		return priceCalculatorVisitor.visit(this);
 	}
+
+	
 
 }
